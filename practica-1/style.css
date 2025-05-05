@@ -1,0 +1,53 @@
+body {
+  font-family: sans-serif;
+}
+
+.especial {
+  font-weight: bold;
+}
+
+.personaje {
+  margin: 3px;
+}
+
+#principal {
+  border: 1px solid blue;
+  /* border-width: 10px;
+  border-style: dotted;
+  border-color: rgb(87, 87, 134); */
+}
+
+.personaje h2 {
+  text-decoration: underline;
+}
+
+.personaje h2 + p {
+  color: grey;
+}
+
+.personaje img {
+  border-radius: 10px;
+}
+
+span {
+  color: white;
+  border-radius: 10px;
+  padding: 0px 5px 2px 10px;
+  margin: 10px;
+}
+
+span[data-rol="cientifica"] {
+  background-color: purple;
+}
+
+span[data-rol="artista"] {
+  background-color: teal;
+}
+
+span[data-rol="gobernante"] {
+  background-color: darkorange;
+}
+
+.personaje:first-child {
+  background-color: #e0f7fa;
+}
