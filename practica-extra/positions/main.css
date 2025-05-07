@@ -1,0 +1,20 @@
+.div-block {
+  display: block;
+  background-color: palegoldenrod;
+}
+
+.div-inline {
+  display: inline;
+  background-color: palegreen;
+  width: 100px;
+  height: 100px;
+  margin: 10px 20px;
+}
+
+.div-inline-block {
+  display: inline-block;
+  background-color: paleturquoise;
+  width: 100px;
+  height: 100px;
+  margin: 10px 20px;
+}

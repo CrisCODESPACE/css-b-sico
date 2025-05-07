@@ -1,0 +1,44 @@
+.header {
+  width: 100%;
+  height: 150px;
+  background-color: palegoldenrod;
+  position: fixed;
+  z-index: 99;
+}
+.caja {
+  width: 200px;
+  height: 200px;
+}
+
+.static {
+  padding-top: 150px;
+  background-color: coral;
+  /* top: 200px;
+  left: 200px; */
+}
+
+.relative {
+  position: relative;
+  background-color: steelblue;
+  left: 300px;
+}
+
+.absolute {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-color: palegreen;
+  top: 10px;
+  left: 120px;
+}
+
+.sticky {
+  background-color: palevioletred;
+  position: sticky;
+  top: 155px;
+}
+
+.container {
+  height: 10000px;
+  border: 1px solid palevioletred;
+}
