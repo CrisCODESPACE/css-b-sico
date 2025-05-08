@@ -15,46 +15,146 @@
   background-color: paleturquoise;
 } */
 
-.container {
+body {
+  background-color: #0c0e0e;
+}
+
+/* HEADER----------------------------------------------------------------- */
+
+.topbar {
+  position: fixed;
   width: 100%;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0c0e0e;
+  border-bottom: 0.1px solid #59564c;
+  z-index: 99;
+}
+
+.brand-logo {
+  width: º00px;
+}
+
+.brand-logo img {
+  width: 100%;
+  padding-top: 10px;
+}
+
+.menu {
+  width: 30%;
+}
+
+.topnav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.topnav a {
+  padding: 5px;
+  color: #efe7d2;
+  transition: color 1s;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  color: #fcd77c;
+}
+
+.topnav a:last-child {
+  background-color: #0c0e0e;
+  border-radius: 3px;
+  border: 0.2px solid #666;
+  transition: border 1s;
+}
+
+.topnav a:last-child:hover {
+  transform: scale(1.1);
+  border-color: #fcd77c;
+}
+
+/* MAIN----------------------------------------------------------------------- */
+.hero {
+  padding-top: 200px;
   height: 100vh;
+  background-image: url("../images/fondo-hero.png");
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.hero-info {
+  padding: 0 40px;
+  color: #efe7d2;
+  position: absolute;
+  top: 10%;
+}
+
+.hero-title {
+  font-family: "Bellefair", system-ui;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 200px;
+}
+
+.hero-p {
+  width: 70%;
+  font-family: "Bellefair";
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.card-container {
+  width: 100%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #efe7d2;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 20px;
   align-items: center;
+  gap: 20px;
+  padding: 100px 0;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  background-color: black;
-  width: 200px;
-  height: 400px;
+  background-color: #0c0e0e;
+  width: 25%;
+  height: 450px;
   border-radius: 10px;
   overflow: hidden;
+  transition: transform 0.5s ease;
+  border: 0.1px solid #59564c;
+}
+
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 10px rgb(41, 41, 41);
 }
 
 .texto {
   height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 30px 20px;
 }
 
-p {
-  font-size: 14px;
-}
-
-button {
-  width: 50%;
-  background-color: black;
-  border: 0.1px solid rgb(92, 85, 85);
-  border-radius: 2px;
-  padding: 4px 8px;
-  color: inherit;
+.texto p {
+  font-size: 16px;
 }
