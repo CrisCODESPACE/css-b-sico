@@ -1,0 +1,46 @@
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 500px 0;
+  gap: 5%;
+  font-size: 20px;
+}
+.card {
+  width: 80%;
+  height: auto;
+  border: 1px solid gray;
+  background-color: palevioletred;
+  font-size: 1em;
+}
+
+/* @media (min-width: 480px) {
+    breakpoints para moviles  480 a 767
+} */
+
+@media (min-width: 768px) {
+  /* breakpoint para tablets */
+  body {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1em;
+  }
+
+  .card {
+    width: 30%;
+    font-size: 1rem;
+    padding: 2rem;
+  }
+}
+
+/* @media (min-width: 991px) {
+    breakpoint pantallas intermedias entre tablet y escritorio
+} */
+@media (min-width: 1024px) {
+  /* breakpoint para escritorio */
+  .card {
+    width: 20%;
+  }
+}
